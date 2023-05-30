@@ -1,0 +1,32 @@
+.row {
+    display : flex;
+    align-items : center;
+    margin-bottom: 15px;
+}
+.box {
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  clear: both;
+}
+.background {
+  margin: 6px;
+  border: 2px yellowgreen;
+  border-left: 6px lightcoral;
+  border-style: solid;
+  background-color: darkmagenta;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
