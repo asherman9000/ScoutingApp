@@ -1,26 +1,21 @@
-.row {
-    display : flex;
-    align-items : center;
-    margin-bottom: 15px;
-}
-.box {
-  float: left;
-  height: 20px;
-  width: 20px;
-  margin-bottom: 15px;
-  border: 1px solid black;
-  clear: both;
-}
 .background {
   margin: 6px;
   border: 2px yellowgreen;
-  border-left: 6px lightcoral;
+  border-left: 20px lightcoral;
   border-style: solid;
+  border-left-style: groove;
+  border-radius: 20px;
   background-color: darkmagenta;
 }
 
+.pain{
+  
+  border-style: inset;
+
+}
+
 .red {
-  color: red;
+  background-color: red;
 }
 
 .green {
@@ -29,4 +24,29 @@
 
 .blue {
   background-color: blue;
+}
+.grid-container {
+  display: grid;
+  gap: 5px 5px;
+  grid-template-areas:
+    'header header header header'
+    'menu pane1 pane2 main'
+    'menu footer footer footer';
+}
+.head{
+  grid-area: header;
+}
+.menu{
+  border: 3px solid lightgray;
+  border-radius: 5px;
+  grid-area: menu;
+}
+.foot{
+  grid-area: footer;
+}
+.item1 {
+  grid-area: pane1;
+}
+.item2 {
+  grid-area: pane2;
 }
